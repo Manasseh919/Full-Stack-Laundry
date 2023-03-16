@@ -12,6 +12,9 @@ import React, { useEffect, useState } from "react";
 import * as Location from "expo-location";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
+import Carousel from "../components/Carousel";
+import Services from "../components/Services";
+ 
 
 const HomeScreen = () => {
   const [displayCurrentAddress, setDisplayCurrentAddress] = useState(
@@ -78,7 +81,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:"#f0f0f0",flex:1}}>
       {/* Location and Profile */}
       <View style={{ flexDirection: "row", alignItems: "center", padding: 10 }}>
         <MaterialIcons name="location-on" size={30} color="#fd5c63" />
@@ -112,6 +115,12 @@ const HomeScreen = () => {
         <TextInput placeholder="search items or more"></TextInput>
         <Feather name="search" size={24} color="#fd5c63" />
       </View>
+
+      {/* Image Carousel */}
+      <Carousel/>
+
+      {/* Services Component */}
+      <Services/>
     </SafeAreaView>
   );
 };
