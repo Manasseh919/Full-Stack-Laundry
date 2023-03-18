@@ -6,6 +6,7 @@ const Carousel = () => {
   const images = [
     "https://i.pinimg.com/474x/10/01/aa/1001aad041db05203c5830c5af49e159.jpg",
     "https://i.pinimg.com/474x/28/de/cd/28decd7ea20834acde29b31fa8a421ec.jpg",
+    "https://i.pinimg.com/564x/16/ea/4b/16ea4bcbaa7fdb4d5df61a49faf7d33c.jpg",
   ];
   return (
     <View>
